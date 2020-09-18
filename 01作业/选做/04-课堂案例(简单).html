@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      ol {
+        list-style-type: none;
+      }
+      .box {
+        width: 330px;
+        /* height: 515px; */
+        background-color: pink;
+        border: 1px solid #000;
+        margin: 100px auto 0;
+        padding: 15px;
+      }
+      .box .title {
+        height: 34px;
+        background-color: lime;
+        line-height: 34px;
+      }
+
+      .box .inner {
+        /* height: 434px; */
+        background-color: cyan;
+        margin-top: 15px;
+      }
+      .inner li {
+        height: 31px;
+        background-color: skyblue;
+        border-bottom: 1px dashed #ccc;
+        font-size: 12px;
+        line-height: 30px;
+        /* padding-left: 20px; */
+        text-indent: 20px;
+      }
+
+      .inner li a {
+        color: #333;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      套路：
+      1、划分盒子
+      2、写结构
+      3、初始化盒子 (加宽加高加背景)
+      4、摆放盒子
+      5、完善细节 
+    -->
+    <div class="box">
+      <div class="title">最新文章/New Articles</div>
+      <ul class="inner">
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+        <li><a href="#">马上就要下课咯</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul,ol {
+			/* 去掉列表的小圆点 */
+			list-style: none;
+		}
+		.box {
+			width: 237px;
+			height: 297px;
+			margin: 100px 0 0 100px;
+			border:1px solid #ccc;
+			border-top: none;
+		}
+		.box > h3 {
+			height: 35px;
+			line-height: 35px;
+			border-top: 3px solid #f40;
+			border-bottom: 1px solid #ccc;
+			/* padding-left: 12px; 不加width属性 不需要在减去padding*/
+			text-indent: 12px; /* 如果是文字的左距离 可以用text-indent 这样的话不会影响盒子模型 */
+			font-weight: 400;
+			font-size: 16px;
+		}
+		.box > img {
+			margin: 0 auto;
+			display: block;
+			margin-top: 7px;
+		}
+		.box li {
+			height: 28px;
+			line-height: 28px;
+			background:  url(images/square.png) 9px center no-repeat;
+			text-indent: 18px; 
+		}
+		.box a {
+			font-size: 12px;
+			color: #333;
+			text-decoration: none;
+		}
+		.box a:hover {
+			color: #f40;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h3>搜索趣图</h3>
+		<img src="images/happy.gif"  alt="">
+		<ul>
+			<li>
+				<a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a>
+			</li>
+			<li>
+				<a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a>
+			</li>
+			<li>
+				<a href="#">GIF：小胖墩游泳被卡 被救后一脸无辜</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
